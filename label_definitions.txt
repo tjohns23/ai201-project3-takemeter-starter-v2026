@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+supported: Backs its point or question with something on the page that does work: a specific fact, a source, a worked example, or a chain of reasoning.
+unsupported: Makes a claim, gives an opinion, or asks a question with nothing on the page backing it.
+quip: A joke or one-liner whose point is carried by the humour rather than stated.

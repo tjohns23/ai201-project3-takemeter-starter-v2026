@@ -54,33 +54,68 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `supported`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** Backs its point or question with something on the page that
+does work: a specific fact, a source, a worked example, or a chain of
+reasoning.
 
 **Example 1:**
->
+> I would certainly not agree that no cryptographer ever recommends using RSA
+> any more […] For instance, NIST employs good cryptographers, and they have a
+> whole standard dealing with integer-factorization-based key establishment.
+> Saying that nobody recommends it any more for anything is just at odds with
+> reality. […] In the vast majority of imaginable settings, this is less
+> attractive than just factoring the public modulus using GNFS, which also the
+> paper itself readily admits.
 
 **Example 2:**
->
+> Can 'concrete' statements be undecidable? […] I'll take the Collatz
+> conjecture (CC) as an example. Suppose the CC is undecidable in ZFC. Then, if
+> we believe ZFC is consistent, we cannot find a counterexample. […] Compare
+> this with the continuum hypothesis (CH) […] To me, this seems like a
+> different flavour to CC. There, it seems that any counterexample would be
+> constructive (it's just a natural number!), and hence, if CC is undecidable,
+> such a counterexample cannot exist. […] Am I wrong to assume this?
+
+### `unsupported`
+
+**Definition:** Makes a claim, gives an opinion, or asks a question with
+nothing on the page backing it.
+
+**Example 1:**
+> I went and skimmed the original paper, and it was really refreshing to have
+> them trip over themselves to say "we haven't absolutely set everything on
+> fire, but this is kind of a big deal". It's wonderful to see academia not
+> sensationalised in a world where it seems like everything else increasingly
+> is.
+
+**Example 2:**
+> For the non communication between Alice and Bob, does that include using
+> their guesses as communication? I.e. can Bob alter his guess based on what
+> Alice guesses?
+
+### `quip`
+
+**Definition:** A joke or one-liner whose point is carried by the humour
+rather than stated.
+
+**Example 1:**
+> We've finally created a real life magic 8 ball.
+
+**Example 2:**
+> I hope you like reading Lean!
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `supported` and `unsupported`
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
+
+If a post gives the reader something they can go to directly and use to
+verify its claims, it's `supported`. Otherwise it's `unsupported`.
 
 
 
