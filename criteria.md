@@ -53,61 +53,58 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
+Overall accuracy is at least 0.70 on the held-out set, in all three seeds.
 
-
-
-**Why this target:**
-
-
+**Why this target:** Three labels means a random guesser gets about 33%, but `supported` and
+`unsupported` will probably make up most of my data, so always guessing the
+bigger one could reach roughly 45–50%. 0.70 sits clearly above that. I didn't
+go higher because the notebook reads only 128 tokens, which cuts off the
+reasoning in many long `supported` posts on r/math.
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
+`supported` and `unsupported` each have an F1 of at least 0.65 in all three seeds; `quip` has an F1 of at least 0.50.
 
-
-
-**Why this target:**
-
-
+**Why this target:** `quip` will be my smallest label in a heavily moderated sub, with maybe 6–8
+posts in the test split, so its F1 will swing between seeds and gets a looser
+target. The two main labels have enough data for a tighter one, and the
+`supported`/`unsupported` boundary is the one my decision rule exists to make
+learnable.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
+Every label is at least 20% of the 200 posts (40 or more), and no label is more than 50%.
 
-
-
-**Why this target:**
-
-
+**Why this target:** r/math moderation removes a lot of low-effort content, so quips may be hard
+to find. If I can't reach 40, that's my signal to drop to two labels. Capping
+the largest label at 50% keeps "always guess `supported`" from looking like a
+good model.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
+The model's most confident third of predictions is at least 15 percentage points more accurate than its least confident third.
 
-
-
-**Why this target:**
-
-
+**Why this target:** My hardest boundary is a matter of degree (how much support counts), so
+borderline posts like the AI black-box one should be the ones the model is
+unsure about. If confidence doesn't separate right from wrong, the model is
+guessing on the boundary rather than learning it.
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
+When I relabel 30 of my own posts cold, at least 3 days later, I agree with my original labels at least 85% of the time.
 
-
-
-**Why this target:**
-
-
+**Why this target:** In my stress test I applied the decision rule differently from my own
+definition on 3 of 8 posts. This checks that the revised rule actually stuck.
+The 15% allowance is for real borderline cases, which should mostly be
+`supported` vs. `unsupported`.
 
 ---
 
