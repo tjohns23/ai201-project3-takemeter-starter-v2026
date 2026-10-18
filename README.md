@@ -114,8 +114,11 @@ rather than stated.
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
-If a post gives the reader something they can go to directly and use to
-verify its claims, it's `supported`. Otherwise it's `unsupported`.
+If a post gives the reader something on the page they can use to verify its
+main point (a specific fact, the content of a source, a worked example, or
+reasoning they can follow step by step), it's `supported`. Otherwise it's
+`unsupported`. Naming or linking a source without using what it says doesn't
+count.
 
 
 
