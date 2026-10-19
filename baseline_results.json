@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.4666666666666667,
+    "f1_macro": 0.4433862433862434,
+    "per_label": {
+      "quip": {
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444445,
+        "support": 5
+      },
+      "supported": {
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.28571428571428575,
+        "support": 12
+      },
+      "unsupported": {
+        "precision": 0.5294117647058824,
+        "recall": 0.6923076923076923,
+        "f1": 0.5999999999999999,
+        "support": 13
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I wouldn\u2019t call behavior approach niche. It\u2019s one of the big 3 ways to describe dynamical systems, the other two being time-domain and frequency-domain.",
+      "gold": "supported",
+      "predicted": "supported"
+    },
+    {
+      "text": "This is implied? The setup, although clearly spelled out, needs to convince me it's the right setup by exhibiting the properties I want out of a theory. Why is this controversial to you?",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": ">Edit: OpenAI was founded as a nonprofit. And still has the name\u2026 Oof, you've got a point there",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "No, umbral calculus was not generally understood to be correct. Rather it was demonstrated that the methods were able to derive correct results pretty quickly, but they could, as quickly, yield false statements. So people knew the theory was formalizable, but had no clue how to do so until the 70s and the 90s.",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "In the sense that there are a lot of deranged mathematicians, so \"the deranged mathematician\" doesn't narrow it down, just like saying \"Bernoulli\".",
+      "gold": "quip",
+      "predicted": "quip"
+    },
+    {
+      "text": "This is a funny story, but there is some real truth to it. Hilbert actually did not invent the abstract definition of Hilbert Spaces as we know them today (i.e. a Hilbert space is a complete inner-product space.) that was Von Neumann (who named them after Hilbert). Instead Hilbert generalized the notion of an inner-product space over functions with discrete eigenvalues (which had existed and been used in mathematics since at least the invention of Sturm-Liouville theory in the early 19th century), to a continuous spectrum. So, ironically, Hilbert was neither the first to invent a Hilbert Space nor was he the last to contribute to the theory. Instead he provided the critical connecting tissue that truly allowed the theory to generalize beyond the well-known examples.",
+      "gold": "supported",
+      "predicted": "quip"
+    },
+    {
+      "text": "People can study things because they enjoy them. Also, there will always be a need for mathematical intuition. It shows up everywhere, not just in pure math.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "By your arguments channels such as 3b1b, Richard Borcherds, Mathemaniac or Quanta Magazine dont post factual content. What is your point? Btw. it is completely fine to not have watched the videos. Noone forced you to give an evaluation.",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I wondered why you were so heavily downvoted then noticed all of the links were zenodo or vixra. Just so you know, vixra is notoriously infested with cranks (in fact it's 99.99% cranks), and zenodo used to be 50/50 but now everyone and their grandmother posts AI generated results on it so I wouldn't trust papers by default, unless provided with easily checkable formalization",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "1/x and 1/sqrt(x) both go to inf at x=0, but the finite area under 1/sqrt(x) is always finite. This is what I learnt and also found to be weird.",
+      "gold": "supported",
+      "predicted": "supported"
+    },
+    {
+      "text": "I don't know. Are you working under Robert Ghrist?",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "can we have this on a logarithmic scale pls",
+      "gold": "quip",
+      "predicted": "supported"
+    },
+    {
+      "text": ">Regardless, there being too many PhDs still stands. Indeed, it is equivalent to there being too few positions. My point is there is a difference in society. With more positions and people to fill it you get more math research being done. I feel like we'd be better served with more math research being done rather than less.",
+      "gold": "unsupported",
+      "predicted": "supported"
+    },
+    {
+      "text": "The thing is, for things people are going to read...... by the way, an experience I have these days (as an old person!) is that I'll think of a really easy efficient proof of something, and chatGPT will say it's wrong etc. And only after a lot of argument chatGPT admits it was looking too superficially at what I was saying. Something barely related to that at all is, the main thing I'd want people to understand about math is how it can show that some types of science are over-confident and bad. A problem is, there are already enough conspiracy theorists who are willing to accept that science is bad....but for reasons that make no sense to me. A lot of the calculations you're talking about still make sense if you replace the integers Z with a ring of functions, and then we're talking about understanding real things, albeit algebraically.....",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I really like Leinster's book",
+      "gold": "unsupported",
+      "predicted": "supported"
+    },
+    {
+      "text": "Right, I think our disagreement about the value of the outputs would be fully resolved empirically if the authors of the report had added two additional arms to their study with the same blind evaluation as for the LLM outputs: 1. One arm with expert consultants solving the same problems at a cost point of, say, 3000 dollars payment per solved problem, without LLM help but full internet access. 2. One arm where the solutions of all submissions are post-processed by a mathematician who is good but not selected to be a specialist in the areas covered. They also get a budget of 3000 dollars per problem and can spend part of it on LLM or other computer support as they see fit. Neither of these were done, and the pre-registered assessments of the problems don't give the same data, so there is going to be disagreement on all the substantive issues.",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "What are the implications if one proves that the pell index for a diophantine equation can only belong to a finite set k\u20ac{1,....,an} Same as above Is it elementary or notoriously massive and is there any approaches(feel free to discuss about any heavy machinery approaches too) around which you think it(the diophantine equation) can be showed to have finitely many solutions given the specific constraint?",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "As someone who has read this book, I consider it a good supplement to other topology books. IIRC the author says this book is a second topology book. The category stuff is introduced in the first chapter but the author is a little terse in that section, so I recommend skipping much of the first chapter and going back to it depending on what you need. The later stuff on homotopy theory was pretty helpful, though, for when I went onto read May's Concise Algtop",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I'm not sure I completely understand your question. From a complexity theory standpoint, I think it is reasonable to model both humans and AI as machines running algorithms to solve problems, and so all the constraints imposed by computability and computational complexity should apply in the same way they that they do to simpler algorithms which we understand better.",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "> The reason I talk about a stronger moral sense of P vs NP is because, technically speaking, it could be the case that P\\neq NP but there exists something like a O(1.000000001^n) algorithm for theorem proving or an algorithm running in O(2^n) time with extremely small constant overhead so that it is fast on all virtually all instances occurring in applications. So, I'm really conjecturing a version of P\\neq NP that says it is true in way that is practically relevant (and e.g. encryption is possible, etc.). This is a distinction which is valid in a bunch of ways. This is essentially why I said in my first comment in this thread that even if one assumed the exponential time hypothesis, the claim didn't follow. ETH is essentially what you want as the \"moral sense\" of P != NP, or if you prefer the strong exponential time hypothesis, and maybe throw in non-collapse of the polynomial hierarchy, too. But even with those, it doesn't follow that there's any range where humans remain useful. It does not then follow that there will always be contexts where humans can be useful to the AI.",
+      "gold": "supported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "He's a prof at UChicago. Of course he thinks anxiety is unnecessary.",
+      "gold": "quip",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "But this is really a non-issue, since as you point out, the precise definition doesn't matter. Who cares whether set theory \"understands\" anything, mathematicians understand. We aren't writing code that must be understood by a machine, it only has to be understandable to humans. But it may be that writing mathematics for a proof system like Lean would benefit from category theory.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "A generator of rotation probably means a skew-symmetric matrix with unit determinant",
+      "gold": "unsupported",
+      "predicted": "supported"
+    },
+    {
+      "text": "I thought the last picture would be a data center, lol.",
+      "gold": "quip",
+      "predicted": "quip"
+    },
+    {
+      "text": "> Why not, it\u2019s not as if the way we teach introductory graduate material in mathematics has changed dramatically in the last two decades. Two decades? Halmos's book was written over 75 years ago!",
+      "gold": "supported",
+      "predicted": "quip"
+    },
+    {
+      "text": "They basically mean that a tensor can be represented by an array of numbers (given a basis) but where a matrix is a 2D array, a tensor can be any dimension (not just 3D!) There is a definition of tensor product for ring modules. That's it's own thing though and I'm not sure how well those ideas will map onto the tensor product of vector spaces which is the more common sort.",
+      "gold": "supported",
+      "predicted": "supported"
+    },
+    {
+      "text": "just shows math ability is separate from general reasoning",
+      "gold": "unsupported",
+      "predicted": "supported"
+    },
+    {
+      "text": "Who's \"we\"? usa?",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "Hello, I have been a top student and I'm finishing my master's in Industrial Engineering in an European university. Really, I chose this degree because I was addicted to factorio, and to similar games, as well as it was engineering and more \"employable\". Here, I found operations research and I've been addicted to it, having done research during my entire master's on a lab and publishing basically \"applied math?\". Basically doing mathematical programming (linear/integer, stochastic, bilevel, multiobjective optimization). I actually read and keep on reading theoretical books on it even though \"I don't really use the theory\". I also like heuristics and really really love ML (with some RL work and coursework projects in computer visions and neural networks). Honestly, I had no idea what mathematical research was like. I've been interacting with research (and also been seeing - for years now? - the LLM headlines) and realized how cool trying to solve mathematical problems looks like. I also feel like my type of research is not \"methodological\" or with generalisations. Do you guys see any reasonable path or have suggestions for me? I have read about books for structured formal proofing and reasoning and will probably read that.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "The euro symbol for \\in is sending me",
+      "gold": "quip",
+      "predicted": "supported"
+    }
+  ]
+}
