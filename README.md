@@ -304,6 +304,26 @@ Baseline: `facebook/bart-large-mnli`, zero-shot, using only
 `label_definitions.txt`, on the same 30 posts in `test_split.csv`. Trained:
 seed 42, 3 epochs (`results.json`).
 
+**What my definitions were worth.** I also ran the baseline once with no
+definitions file, so it saw only the bare label names
+(`baseline_bare_results.json`). The table above is the definitions run.
+
+| Measure | Bare names | With definitions | Difference |
+|---|---|---|---|
+| Overall accuracy | 0.300 | 0.467 | +0.167 |
+| Macro F1 | 0.241 | 0.443 | +0.202 |
+| F1 — `quip` | 0.286 | 0.444 | +0.158 |
+| F1 — `supported` | 0.438 | 0.286 | -0.152 |
+| F1 — `unsupported` | 0.000 | 0.600 | +0.600 |
+
+The definitions are worth about 17 points of accuracy. Nearly all of it comes
+from `unsupported`. The word on its own means nothing to the model (F1 0.000),
+but "makes a claim, gives an opinion, or asks a question with nothing on the
+page backing it" does (0.600). `supported` got worse with its definition,
+which fits the main finding: the zero-shot model can't apply "something on
+the page that backs the main point", and spelling that out pulled it away
+from the label rather than toward it.
+
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
