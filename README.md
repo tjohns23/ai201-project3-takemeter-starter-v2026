@@ -364,7 +364,17 @@ one-liner" catches about half of them.
 
 Criterion 2 is shown as `supported` / `unsupported` / `quip`. Criterion 3 is a
 property of `labels.csv`, so it's the same for every seed. All three runs are
-in `results_three_seeds_before.json`.
+in `results_three_seeds_before.json`. All three runs were on CPU (torch
+2.14.1+cpu), 3 epochs. The file was first written with `RUN_LABEL = "after"`
+by mistake and renamed to `_before`, since no improvement had been made yet.
+
+**The spread.** Accuracy was 0.567, 0.567, 0.667: a 10-point swing, right at
+the line where the measure stops being stable. Each seed gets a different
+30-post test split, so one seed's test set being friendlier is worth 3 posts.
+Macro F1 moved less (0.412 → 0.486), held down in every seed by `quip` at
+0.000. My dataset is small and lopsided enough that a single seed's accuracy
+shouldn't be trusted to within about 10 points. That's mostly down to 200
+posts, with only 5 quips in each test split.
 
 ### Confusion matrix
 
